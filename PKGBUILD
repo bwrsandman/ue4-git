@@ -3,14 +3,14 @@
  # You have to register at unrealengine.com and in this profile you have to enter your github accountname, so that epicgames grants you access to the repository, otherwise makepkg will fail.
  
 pkgbase=ue4-git
-pkgver=4.7.1.linux.r216.g7ef4485
+pkgver=4.7.1.linux.r229.g4044bb1
 pkgrel=1
 arch=('x86_64')
 url="https://www.unrealengine.com/"
 license=('custom')
 groups=()
 depends=('qt5-base' 'sdl2' 'xorg-server' 'libpng' 'harfbuzz' 'graphite' 'xdg-user-dirs')
-makedepends=('git' 'mono' 'clang' 'dos2unix' 'cmake' 'python' 'qt5-base' 'sdl2')
+makedepends=('git' 'mono' 'clang35' 'dos2unix' 'cmake' 'python' 'qt5-base' 'sdl2')
 #replaces=()
 backup=()
 #options=('staticlibs' 'libtool')
@@ -24,7 +24,7 @@ source=("${pkgbase}::git+https://github.com/3dluvr/UnrealEngine"
 noextract=()
 sha256sums=('SKIP'
             'e0b84b3fdd182a75d7a1c2c5ef65c4f9e941db71a204c0b3f6c1e14418e3a3c5'
-            '0e3e989a208dff033daf178ef5170532037fc392fc513ab4987e3aad69bbe3e8'
+            '179df93028f4ef71e08f9ba2a0effff77292f446be86d855b6eac543a6492271'
             'f2bea03f699c5f10e21f858c8bbf1960ad6fc4a9457382550bf038a660203bb5'
             'c315bdef68e24da6d65042d1d41d2ac0c1a5df6fa98b22de752fb2305d2e5a95') #autofill using updpkgsums
  
